@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.leoandemy.orglist.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:name="com.leoandemy.orglist.ui.guests.AllGuestsFragment"
+        android:label="@string/menu_all_guests"
+        tools:layout="@layout/fragment_all_guests" />
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.leoandemy.orglist.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:name="com.leoandemy.orglist.ui.presents.PresentsFragment"
+        android:label="@string/menu_presents"
+        tools:layout="@layout/fragment_presents" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.leoandemy.orglist.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:name="com.leoandemy.orglist.ui.expenses.ExpensesFragment"
+        android:label="@string/menu_expenses"
+        tools:layout="@layout/fragment_expenses" />
 </navigation>

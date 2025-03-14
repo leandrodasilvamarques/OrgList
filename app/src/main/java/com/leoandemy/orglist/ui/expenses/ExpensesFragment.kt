@@ -1,4 +1,4 @@
-package com.leoandemy.orglist.ui.gallery
+package com.leoandemy.orglist.ui.expenses
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.leoandemy.orglist.databinding.FragmentGalleryBinding
+import com.leoandemy.orglist.databinding.FragmentExpensesBinding
 
-class GalleryFragment : Fragment() {
+class ExpensesFragment : Fragment() {
 
-    private var _binding: FragmentGalleryBinding? = null
+    private var _binding: FragmentExpensesBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,14 +22,14 @@ class GalleryFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val galleryViewModel =
-            ViewModelProvider(this).get(GalleryViewModel::class.java)
+        val viewModel =
+            ViewModelProvider(this).get(ExpensesViewModel::class.java)
 
-        _binding = FragmentGalleryBinding.inflate(inflater, container, false)
+        _binding = FragmentExpensesBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textGallery
-        galleryViewModel.text.observe(viewLifecycleOwner) {
+        val textView: TextView = binding.textExpenses
+        viewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

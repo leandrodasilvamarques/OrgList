@@ -1,4 +1,4 @@
-package com.leoandemy.orglist.ui.expenses
+package com.leoandemy.orglist.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.leoandemy.orglist.databinding.FragmentExpensesBinding
+import com.leoandemy.orglist.viewmodel.ExpensesViewModel
 
 class ExpensesFragment : Fragment() {
 

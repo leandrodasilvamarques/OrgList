@@ -1,13 +1,13 @@
-package com.leoandemy.orglist.ui.presents
+package com.leoandemy.orglist.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class PresentsViewModel : ViewModel() {
+class ExpensesViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is gallery Fragment"
+        value = "This is slideshow Fragment"
     }
     val text: LiveData<String> = _text
 }

@@ -1,4 +1,4 @@
-package com.leoandemy.orglist
+package com.leoandemy.orglist.view
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,8 +10,8 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
+import com.leoandemy.orglist.R
 import com.leoandemy.orglist.databinding.ActivityMainBinding
-import com.leoandemy.orglist.ui.GuestsFormActivity
 
 class MainActivity : AppCompatActivity(){
 

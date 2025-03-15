@@ -1,11 +1,11 @@
-package com.leoandemy.orglist.ui
+package com.leoandemy.orglist.view
 
 import android.os.Bundle
 import android.view.View
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.leoandemy.orglist.databinding.ActivityGuestsFormBinding
+import com.leoandemy.orglist.viewmodel.GuestsFormViewModel
 
 class GuestsFormActivity : AppCompatActivity(), View.OnClickListener {
     lateinit var binding: ActivityGuestsFormBinding
